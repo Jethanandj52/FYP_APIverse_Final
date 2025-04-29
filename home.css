@@ -663,7 +663,9 @@ select,
 }
 
 #userContainer {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: space-between;
     gap: 20px;
     flex-wrap: wrap;
     align-items: center;
@@ -1405,8 +1407,8 @@ canvas {
 
 #userContainer .apiCard {
     background: linear-gradient(145deg, #1e293b, #2d3748);
-    padding: 25px;
-    margin: 10px;
+   
+   
     border-radius: 12px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
@@ -1440,8 +1442,8 @@ canvas {
 
 #userContainer .apiCard .delete-btn {
     background: linear-gradient(145deg, #ef4444, #dc2626) !important;
-    width: 100%;
-    margin-top: 15px;
+     margin-left:70px;
+ 
     padding: 12px !important;
     font-size: 15px !important;
     display: flex;
@@ -1453,8 +1455,9 @@ canvas {
 }
 
 #userContainer .apiCard .delete-btn i {
+    display: block;
     font-size: 16px;
-    background-color: red;
+    background-color: rgb(147, 147, 147);
 }
 
 #userContainer .apiCard .delete-btn:hover {
@@ -1541,9 +1544,11 @@ body.light-theme #userContainer .apiCard div b {
 body.light-theme #userContainer .apiCard p {
     color: #000000;
 }
-body.light-theme .apiCard .fa-heart{
+
+body.light-theme .apiCard .fa-heart {
     color: blue;
 }
+
 
 /* Dashboard Cards in Light Theme */
 
@@ -1959,9 +1964,8 @@ body.light-theme .team-card i {
     cursor: pointer;
     font-size: 20px;
     transition: all 0.3s ease;
-    
 }
- 
+
 
 /* API Card Styles */
 
@@ -2391,10 +2395,11 @@ body.light-theme #userDashInfo span {
     padding: 0;
 }
 
-#contact h2{
-    padding: 20px 10px ;
+#contact h2 {
+    padding: 20px 10px;
     font-weight: 30px;
 }
+
 .contact-left,
 .contact-right {
     width: 50%;
@@ -2418,11 +2423,11 @@ body.light-theme #userDashInfo span {
     line-height: 18px;
 }
 
-.contact-left h2, 
+.contact-left h2,
 .contact-form-title {
     color: #60a5fa;
     font-size: 2rem;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -2547,9 +2552,11 @@ body.light-theme #userDashInfo span {
     background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
 }
 
-#contact p{
+#contact p {
     text-align: left;
 }
+
+
 /* Light Theme */
 
 body.light-theme .contact-left,
@@ -2795,8 +2802,7 @@ body.light-theme .about-impact-desc {
     border-top: 1px solid #e0e7ef;
 }
 
-.discription{
+.discription {
     display: flex;
     justify-content: space-between;
-     
 }
